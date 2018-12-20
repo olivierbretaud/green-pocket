@@ -14,7 +14,7 @@ export default {
   name: 'Start',
   data() {
     return {
-      startSentence: "Découvrez l'impact de nos téléphones sur l'environement"
+      startSentence: "Découvrez l'impact de nos téléphones sur l'environement en 5 questions."
     }
   }
 }
