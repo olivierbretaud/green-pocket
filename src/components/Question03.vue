@@ -15,16 +15,17 @@
               dur="3s"
               repeatCount="indefinite" />
           </image>
-        <image x="60" y="-58" height="40%" width="40%" xlink:href="../assets/phone.svg" transform="rotate(80)">
+        <image x="57" y="-63" height="40%" width="40%" xlink:href="../assets/phone.svg" transform="rotate(85)">
           <animateMotion
-            path="M 0 0 V 2  Z"
-            dur="5s" 
+            path="M 0 0 V 2 Z"
+            dur="2s" 
             repeatCount="indefinite" />
         </image>
           <rect x="30" y="80" width="45" height="8" fill="#a4c9d6" />
       </svg>
     </div>
     <div class="question d-flex flex-column align-items-center">
+      <h5 class="font-weight-bold text-dark question-number" v-if="!displayAwnser03">3/5</h5>  
       <h4 class="font-weight-bold" v-if="goodAwnser03">Bravo!</h4>
       <h4 class="font-weight-bold" v-if="badAwnser03">Mauvaise réponse</h4>
       <h5 class="font-weight-bold text-dark" v-if="displayAwnser03">{{ awnser03 }}</h5>  
@@ -34,7 +35,7 @@
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none' : displayAwnser03}" v-on:click="displayAwnser03 = true" @click="badAwnser03 = true"> {{ awnserA03 }} </button>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser03}" v-on:click="displayAwnser03 = true" @click="badAwnser03 = true"> {{ awnserB03 }} </button>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser03}" v-on:click="displayAwnser03 = true" @click="goodAwnser03 = true"> {{ awnserC03 }} </button>
-        <a a href="#02" class="js-scrollTo"><button type="button" class="custom-button btn btn-light m-2" v-if="displayAwnser03" >Question suivante</button></a>
+        <a a href="#04" class="js-scrollTo"><img class="arrows mt-3" src="../assets/arrows.svg" v-if="displayAwnser03" ></a>
       </div>
     </div>
   </div>

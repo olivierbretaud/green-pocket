@@ -1,9 +1,10 @@
 <template>
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
     <div class="question d-flex flex-column align-items-center">
-      <h5 class="m-3" >{{ startSentence }}</h5>
+      <h5 class="m-3" >{{ endSentence }}</h5>
+      <h5 class="font-weight-bold text-dark" >{{ mainSentence }}</h5>
       <div>
-        <a href="#01" class="js-scrollTo"><button type="button" class="custom-button btn btn-light m-2"> Démarrer le quizz ! </button></a>
+        <a href="#00" class="js-scrollTo"><button type="button" class="custom-button btn btn-light m-2">Recommencer le quizz ! </button></a>
       </div>
     </div>
   </div>
@@ -11,10 +12,11 @@
 
 <script>
 export default {
-  name: 'Start',
+  name: 'End',
   data() {
     return {
-      startSentence: "Découvrez l'impact de nos téléphones sur l'environement en 5 questions."
+      endSentence: "Nos téléphones ont un impact considérable sur l'environement!",
+      mainSentence: "Faites un geste pour la planète, conserver votre téléphone !"
     }
   }
 }
