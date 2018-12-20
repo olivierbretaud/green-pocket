@@ -1,30 +1,33 @@
 <template>
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
-    <div class="awnser size-anim" v-if="displayAwnser">
+    <div class="awnser size-anim" v-if="displayAwnser01">
       <svg id="bg-anim" width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <rect id="a" x="-2" y="6" width="10" height="1" rx="0.5" ry="0.5" fill="#000" >
-          <animateMotion
-            path="M 0 0 H 300"
-            dur="3s"
-            repeatCount="indefinite" />
+        <rect id="a" x="-2" y="70" width="100%" height="0.5" rx="0.5" ry="0.5" viewBox="0 0 100 100" fill="#343a40" >
         </rect>
-        <circle cx="50" cy="50" r="40" fill="#000" style="fill-opacity: .10;"/>
-        <image id="phone" x="15" y="15" height="70%" width="70%"  xlink:href="../assets/phone.svg" >
+        <image x="30" y="15" height="40%" width="40%"  xlink:href="../assets/industry.svg" >
           <animateMotion
             path="M 0 0 V 10  Z"
             dur="5s" 
             repeatCount="indefinite" />
         </image>
+        <image x="-50" y="60" height="25%" width="25%"  xlink:href="../assets/truck-moving.svg" >
+          <animateMotion
+            path="M 0 0 H 300"
+            dur="4s"
+            repeatCount="indefinite" />
+        </image>
       </svg>
     </div>
     <div class="question d-flex flex-column align-items-center">
-      <h4 class="font-weight-bold" v-if="goodAwnser">Bravo!</h4>
-      <h4 class="font-weight-bold" v-if="badAwnser">Mauvaise réponse</h4>
-      <h5 class="m-3" v-if="!displayAwnser" >{{ question }}</h5>
-      <h5 class="m-3" v-if="displayAwnser" >{{ solution }}</h5>
+      <h4 class="font-weight-bold" v-if="goodAwnser01">Bravo!</h4>
+      <h4 class="font-weight-bold" v-if="badAwnser01">Mauvaise réponse</h4>
+      <h5 class="font-weight-bold text-dark" v-if="displayAwnser01">{{ awnser01 }}</h5>  
+      <h5 class="m-3" v-if="!displayAwnser01" >{{ question01 }}</h5>
+      <h5 class="m-3" v-if="displayAwnser01" >{{ solution01 }}</h5>
       <div>
-        <button type="button" class="btn btn-light m-2" v-bind:class="{ 'd-none' : displayAwnser}" v-on:click="displayAwnser = true" @click="goodAwnser = true"> {{ awnserA }} </button>
-        <button type="button" class="btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser}" v-on:click="displayAwnser = true" @click="badAwnser = true"> {{ awnserB }} </button>
+        <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none' : displayAwnser01}" v-on:click="displayAwnser01 = true" @click="goodAwnser01 = true"> {{ awnserA01 }} </button>
+        <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser01}" v-on:click="displayAwnser01 = true" @click="badAwnser01 = true"> {{ awnserB01 }} </button>
+        <a a href="#02" class="js-scrollTo"><button type="button" class="custom-button btn btn-light m-2" v-if="displayAwnser01" >Question suivante</button></a>
       </div>
     </div>
   </div>
@@ -35,13 +38,14 @@ export default {
   name: 'Question01',
   data() {
     return {
-      question: 'La pollution issue de l’usage d’un téléphone est elle plus importante que celle issue de sa fabrication ?',
-      solution: "La pollution issue de la production un téléphone est bien plus importante, l’extraction des minerais qui le composent à impact considérable sur l’environnement",
-      awnserA: 'oui',
-      awnserB: 'non',
-      displayAwnser: false,
-      goodAwnser: false,
-      badAwnser: false,
+      question01: 'La pollution issue de l’usage d’un téléphone est elle plus importante que celle issue de sa fabrication ?',
+      solution01: "l’extraction et le transport des minerais qui composent le téléphone à impact considérable sur l’environnement",
+      awnserA01: 'oui',
+      awnserB01: 'non',
+      awnser01: "La production est plus polluante",
+      displayAwnser01: false,
+      goodAwnser01: false,
+      badAwnser01: false,
     }
   }
 }
@@ -60,7 +64,7 @@ export default {
 }
 
 .awnser {
-  width: 100vw;
+  width: 96vw;
   height: 60vh;
 }
 
@@ -89,7 +93,7 @@ export default {
     opacity: 0;
   }
   to {
-    width: 100vw;
+    width: 96vw;
     height: 60vh;
     opacity: 1;
   }
@@ -103,7 +107,7 @@ export default {
     opacity: 0;
   }
   to {
-    width: 100vw;
+    width: 96vw;
     height: 60vh;
     opacity: 1;
   }
