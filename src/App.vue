@@ -1,16 +1,19 @@
 <template>
   <div id="main-container">
-    <Question01 />
+    <!-- <Question01 /> -->
+    <Question02 />
   </div>
 </template>
 
 <script>
-import Question01 from './components/Question01.vue'
+// import Question01 from './components/Question01.vue'
+import Question02 from './components/Question02.vue'
 
 export default {
   name: 'app',
   components: {
-    Question01
+    // Question01,
+    Question02
   }
 }
 </script>
