@@ -2,17 +2,17 @@
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
     <div class="awnser size-anim" v-if="displayAwnser01">
       <svg id="bg-anim" width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <rect id="a" x="-2" y="70" width="100%" height="0.5" rx="0.5" ry="0.5" viewBox="0 0 100 100" fill="#343a40" >
+        <rect id="a" x="-50" y="70" width="200%" height="0.5" rx="0.5" ry="0.5" viewBox="0 0 100 100" fill="#343a40" >
         </rect>
-        <image x="30" y="15" height="40%" width="40%"  xlink:href="../assets/industry.svg" >
+        <image x="30" y="5" height="40%" width="40%"  xlink:href="../assets/industry.svg" >
           <animateMotion
             path="M 0 0 V 10  Z"
             dur="5s" 
             repeatCount="indefinite" />
         </image>
-        <image x="-50" y="60" height="25%" width="25%"  xlink:href="../assets/truck-moving.svg" >
+        <image x="-70" y="62" height="20%" width="20%"  xlink:href="../assets/truck-moving.svg" >
           <animateMotion
-            path="M 0 0 H 300"
+            path="M 0 0 H 200"
             dur="4s"
             repeatCount="indefinite" />
         </image>
@@ -39,9 +39,9 @@ export default {
   data() {
     return {
       question01: 'La pollution issue de l’usage d’un téléphone est elle plus importante que celle issue de sa fabrication ?',
-      solution01: "l’extraction et le transport des minerais qui composent le téléphone à impact considérable sur l’environnement",
-      awnserA01: 'oui',
-      awnserB01: 'non',
+      solution01: "L’extraction et le transport des minerais qui composent le téléphone à impact considérable sur l’environnement",
+      awnserA01: 'non',
+      awnserB01: 'oui',
       awnser01: "La production est plus polluante",
       displayAwnser01: false,
       goodAwnser01: false,

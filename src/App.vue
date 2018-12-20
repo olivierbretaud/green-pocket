@@ -4,6 +4,7 @@
   <Question01 id="01"/>
   <Question02 id="02"/>
   <Question03 id="03"/>
+  <End id="06"/>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Question03 from './components/Question03.vue'
 import Question02 from './components/Question02.vue'
 import Question01 from './components/Question01.vue'
+import End from './components/End.vue'
 import Start from './components/Start.vue'
 
 
@@ -20,7 +22,8 @@ export default {
     Question03,
     Question02,
     Question01,
-    Start
+    Start,
+    End
   },
 }
 

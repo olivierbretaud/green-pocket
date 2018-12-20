@@ -15,10 +15,10 @@
               dur="3s"
               repeatCount="indefinite" />
           </image>
-        <image x="60" y="-58" height="40%" width="40%" xlink:href="../assets/phone.svg" transform="rotate(80)">
+        <image x="57" y="-63" height="40%" width="40%" xlink:href="../assets/phone.svg" transform="rotate(85)">
           <animateMotion
-            path="M 0 0 V 2  Z"
-            dur="5s" 
+            path="M 0 0 V 2 Z"
+            dur="2s" 
             repeatCount="indefinite" />
         </image>
           <rect x="30" y="80" width="45" height="8" fill="#a4c9d6" />
@@ -34,7 +34,7 @@
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none' : displayAwnser03}" v-on:click="displayAwnser03 = true" @click="badAwnser03 = true"> {{ awnserA03 }} </button>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser03}" v-on:click="displayAwnser03 = true" @click="badAwnser03 = true"> {{ awnserB03 }} </button>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser03}" v-on:click="displayAwnser03 = true" @click="goodAwnser03 = true"> {{ awnserC03 }} </button>
-        <a a href="#02" class="js-scrollTo"><button type="button" class="custom-button btn btn-light m-2" v-if="displayAwnser03" >Question suivante</button></a>
+        <a a href="#04" class="js-scrollTo"><button type="button" class="custom-button btn btn-light m-2" v-if="displayAwnser03" >Question suivante</button></a>
       </div>
     </div>
   </div>

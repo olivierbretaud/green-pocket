@@ -163,20 +163,9 @@ a {
   color: black;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  animation-name: 2007;
-  animation-duration: 1s;
 }
 
-@keyframes 2007 {
-  from {
-    height: 0 !important;
-    opacity: 0;
-  }
-  to {
-    height: 30% !important;
-    opacity: 1;
-  }
-}
+
 
 .prog-2010 {
   width: 100%;
