@@ -5,7 +5,6 @@
         <div class="col-3 col-lg-3 col-md-3 col-sm-3 year-2007 ">
           <div class="progress progress-bar-vertical mr-0 mb-2">
             <div class="progress-bar prog-2007" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">122
-              <span class="sr-only">30% Complete</span>
             </div>
           </div>
           <span class="production-year"><p>2007</p></span>
@@ -18,15 +17,15 @@
           </div>
             <span class="production-year"><p>2010</p></span>
         </div>
-        <div class="col-3 col-lg-3 col-md-3 col-sm-3 year-2013">
-      <div class="progress progress-bar-vertical mr-0 mb-2">
-        <div class="progress-bar prog-2013" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">1019
-          <span class="sr-only">30% Complete</span>
-        </div>
-    </div>
+        <div class="col-3 col-lg-3 col-md-3 col-sm-3 year-2013 m-3">
+        <div class="progress progress-bar-vertical mr-0 mb-2">
+          <div class="progress-bar prog-2013" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">1019
+            <span class="sr-only">30% Complete</span>
+          </div>
+      </div>
           <span class="production-year"><p>2013</p></span>
       </div>
-   <div class="col-3 col-lg-3 col-md-3 col-sm-3 year-2016">
+   <div class="col-3 col-lg-3 col-md-3 col-sm-3 year-2016 m-3">
    <div class="progress progress-bar-vertical mr-0 mb-2">
     <div class="progress-bar prog-2016" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">1470
       <span class="sr-only">30% Complete</span>
@@ -160,13 +159,23 @@ a {
  .prog-2007 {
   width: 100%;
   height: 30% !important;
-  -webkit-transition: height 0.6s ease;
-  -o-transition: height 0.6s ease;
-  transition: height 0.6s ease;
   background-color:rgb(244, 213, 93);
   color: black;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  animation-name: 2007;
+  animation-duration: 1s;
+}
+
+@keyframes 2007 {
+  from {
+    height: 0 !important;
+    opacity: 0;
+  }
+  to {
+    height: 30% !important;
+    opacity: 1;
+  }
 }
 
 .prog-2010 {
@@ -239,17 +248,6 @@ a {
 .numbers {
 max-width: 550px;
 margin:10px;
-}
-
-@keyframes prog-2016 {
-  from {
-    height: 0vh;
-    opacity: 0;
-  }
-  to {
-    height: 100%;
-    opacity: 1;
-  }
 }
 
 </style>

@@ -65,7 +65,7 @@ export default {
 
 .awnser {
   width: 96vw;
-  height: 60vh;
+  height: 50vh;
 }
 
 #bg-amin {
@@ -94,7 +94,7 @@ export default {
   }
   to {
     width: 96vw;
-    height: 60vh;
+    height: 50vh;
     opacity: 1;
   }
 }
@@ -108,7 +108,7 @@ export default {
   }
   to {
     width: 96vw;
-    height: 60vh;
+    height: 50vh;
     opacity: 1;
   }
 }

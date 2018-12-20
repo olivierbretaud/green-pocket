@@ -3,10 +3,12 @@
   <start id="00"/>
   <Question01 id="01"/>
   <Question02 id="02"/>
+  <Question03 id="03"/>
   </div>
 </template>
 
 <script>
+import Question03 from './components/Question03.vue'
 import Question02 from './components/Question02.vue'
 import Question01 from './components/Question01.vue'
 import Start from './components/Start.vue'
@@ -15,6 +17,7 @@ import Start from './components/Start.vue'
 export default {
   name: 'app',
   components: {
+    Question03,
     Question02,
     Question01,
     Start
