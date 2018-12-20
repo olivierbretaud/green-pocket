@@ -2,10 +2,12 @@
   <div id="main-container">
   <start id="00"/>
   <Question01 id="01"/>
+  <Question02 id="02"/>
   </div>
 </template>
 
 <script>
+import Question02 from './components/Question02.vue'
 import Question01 from './components/Question01.vue'
 import Start from './components/Start.vue'
 
@@ -13,6 +15,7 @@ import Start from './components/Start.vue'
 export default {
   name: 'app',
   components: {
+    Question02,
     Question01,
     Start
   },
@@ -41,5 +44,16 @@ body {
   color: whitesmoke;
   background-color: #16b164;
 }
+.custom-button {
+color: whitesmoke !important;
+border-radius: 20px !important;
+border-width: medium !important;
+background-color: #16b164;
+}
 
+.custom-button:hover {
+background-color: whitesmoke !important;
+color: #16b164 !important;
+border-width: medium !important;
+}
 </style>

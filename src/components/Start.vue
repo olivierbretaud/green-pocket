@@ -3,7 +3,7 @@
     <div class="question d-flex flex-column align-items-center">
       <h5 class="m-3" >{{ startSentence }}</h5>
       <div>
-        <a href="#01" class="js-scrollTo"><button type="button" class="btn btn-light m-2"> Démarrer le quizz ! </button></a>
+        <a href="#01" class="js-scrollTo"><button type="button" class="custom-button btn btn-light m-2"> Démarrer le quizz ! </button></a>
       </div>
     </div>
   </div>

@@ -25,9 +25,9 @@
       <h5 class="m-3" v-if="!displayAwnser01" >{{ question01 }}</h5>
       <h5 class="m-3" v-if="displayAwnser01" >{{ solution01 }}</h5>
       <div>
-        <button type="button" class="btn btn-light m-2" v-bind:class="{ 'd-none' : displayAwnser01}" v-on:click="displayAwnser01 = true" @click="goodAwnser01 = true"> {{ awnserA01 }} </button>
-        <button type="button" class="btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser01}" v-on:click="displayAwnser01 = true" @click="badAwnser01 = true"> {{ awnserB01 }} </button>
-        <a a href="#00" class="js-scrollTo"><button type="button" class="btn btn-light m-2" v-if="displayAwnser01" >Question suivante</button></a>
+        <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none' : displayAwnser01}" v-on:click="displayAwnser01 = true" @click="goodAwnser01 = true"> {{ awnserA01 }} </button>
+        <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser01}" v-on:click="displayAwnser01 = true" @click="badAwnser01 = true"> {{ awnserB01 }} </button>
+        <a a href="#02" class="js-scrollTo"><button type="button" class="custom-button btn btn-light m-2" v-if="displayAwnser01" >Question suivante</button></a>
       </div>
     </div>
   </div>
