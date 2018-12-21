@@ -67,11 +67,11 @@ export default {
   name: 'Question04',
   data() {
     return {
-      question04: "Combien d'eau a été besoin pour aller aux toilettes ?",
+      question04: "Quelle est la princiaple source d'émission à effet de serre des téléphones ?",
       solution04: "La part des technologies de l’information pourrait atteindre 14 % du total des émissions de gaz à effet de serre d’ici 2040, soit plus de la moitié des émissions causées par l’industrie du transport",
-      awnserA04: '700 millions',
-      awnserB04: '1 milliard',
-      awnserC04: '7 milliards',
+      awnserA04: 'Le transport',
+      awnserB04: "L'usage",
+      awnserC04: "La production",
       awnser04: "La production répresente la principale source d'émission.",
       displayAwnser04: false,
       goodAwnser04: false,
