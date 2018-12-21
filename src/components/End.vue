@@ -3,9 +3,6 @@
     <div class="question d-flex flex-column align-items-center">
       <h5 class="m-3" >{{ endSentence }}</h5>
       <h5 class="font-weight-bold text-dark" >{{ mainSentence }}</h5>
-      <div>
-        <a href="#00" class="js-scrollTo"><button type="button" class="custom-button btn btn-light m-2">Recommencer le quizz ! </button></a>
-      </div>
     </div>
   </div>
 </template>
