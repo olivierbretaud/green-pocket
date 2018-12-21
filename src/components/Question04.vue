@@ -3,34 +3,43 @@
     <div class="awnser size-anim d-flex justify-content-center flex-column align-items-center" v-if="displayAwnser04">
       <div class="donut">
          <div class="donut-chart-block block">
-           <h2 class="titular">OS AUDIENCE STATS</h2>
+           <h6 class="chart-title mb-3">Emission de gaz à effet de serre d'un téléphone portable</h6>
               <div class="donut-chart">
-                <div id="porcion1" class="recorte">
-                  <div class="quesito ios" data-rel="21">
+                <div id="segment1" class="recorte">
+                  <div class="quesito " data-rel="80">
                   </div>
                 </div>
-                <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
-                <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
-                <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
-                <p class="center-date">JUNE<br><span class="scnd-font-color">2013</span></p>        
+                <div id="segment2" class="recorte">
+                  <div class="quesito transport" data-rel="16">
+                  </div>
+                </div>
+                <div id="segment3" class="recorte">
+                  <div class="quesito usage" data-rel="3">
+                  </div>
+                </div>
+                <div id="segment4" class="recorte">
+                  <div class="quesito production" data-rel="1">
+                  </div>
+                </div>
+                <p class="center-date"><br><span class="scnd-font-color"></span></p>
               </div>
               <ul class="os-percentages horizontal-list">
-                  <li>
-                      <p class="ios os scnd-font-color">iOS</p>
-                      <p class="os-percentage">21<sup>%</sup></p>
-                  </li>
-                  <li>
-                      <p class="mac os scnd-font-color">Mac</p>
-                      <p class="os-percentage">39<sup>%</sup></p>
-                  </li>
-                  <li>
-                      <p class="linux os scnd-font-color">Linux</p>
-                      <p class="os-percentage">9<sup>%</sup></p>
-                  </li>
-                  <li>
-                      <p class="win os scnd-font-color">Win</p>
-                      <p class="os-percentage">31<sup>%</sup></p>
-                  </li>
+                <li>
+                  <p class="production-scnd-font-color">Production</p>
+                  <p class="gas-percentage">80<sup>%</sup></p>
+                </li>
+                <li>
+                  <p class="usage-scnd-font-color">Usage</p>
+                  <p class="gas-percentage">16<sup>%</sup></p>
+                </li>
+                <li>
+                  <p class="transport-scnd-font-color">Transport</p>
+                  <p class="gas-percentage">3<sup>%</sup></p>
+                </li>
+                <li>
+                  <p class="recycling-scnd-font-color">Recyclage</p>
+                  <p class="gas-percentage">1<sup>%</sup></p>
+                </li>
               </ul>
             </div>
       </div>
@@ -42,7 +51,7 @@
         <h5 class="font-weight-bold text-dark" v-if="displayAwnser04">{{ awnser04 }}</h5>  
         <h5 class="m-3" v-if="!displayAwnser04" >{{ question04 }}</h5>
         <h5 class="m-3" v-if="displayAwnser04" >{{ solution04 }}</h5>
-        <div>
+      <div>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none' : displayAwnser04}" v-on:click="displayAwnser04 = true" @click="badAwnser04 = true"> {{ awnserA04 }} </button>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser04}" v-on:click="displayAwnser04 = true" @click="badAwnser04 = true"> {{ awnserB04 }} </button>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser04}" v-on:click="displayAwnser04 = true" @click="goodAwnser04 = true"> {{ awnserC04 }} </button>
@@ -58,20 +67,18 @@ export default {
   name: 'Question04',
   data() {
     return {
-      question04: "Combien d'eau a été besoin pour aller aux toilettes ?",
-      solution04: "La progression de la quantité fabriquée chaque année est encore plus alarmante.",
-      awnserA04: '700 millions',
-      awnserB04: '1 milliard',
-      awnserC04: '7 milliards',
-      awnser04: "7 milliards de téléphones ont été fabriqué depuis 2007",
+      question04: "Quelle est la princiaple source d'émission à effet de serre des téléphones ?",
+      solution04: "La part des technologies de l’information pourrait atteindre 14 % du total des émissions de gaz à effet de serre d’ici 2040.",
+      awnserA04: 'Le transport',
+      awnserB04: "L'usage",
+      awnserC04: "La production",
+      awnser04: "La production répresente la principale source d'émission.",
       displayAwnser04: false,
       goodAwnser04: false,
       badAwnser04: false,
     }
   }
 }
-
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -156,7 +163,7 @@ a {
 	border-radius: 100%
  }
 p.center-date {
-  background: #394264;
+  background: #16b164;
   position: absolute;
   text-align: center;
 	font-size: 28px;
@@ -172,7 +179,7 @@ p.center-date {
  line-height: 0; 
 }
 .recorte {
-    border-radius: 50%;
+    border-radius: 40%;
     clip: rect(0px, 200px, 200px, 100px);
     height: 100%;
     position: absolute;
@@ -187,47 +194,54 @@ p.center-date {
     font-family: monospace;
     font-size: 1.5rem;
   }
-#porcion1 {
+#segment1 {
     transform: rotate(0deg);
   }
 
-#porcion1 .quesito {
-    background-color: #E64C65;
-    transform: rotate(76deg);
+#segment1 .quesito {
+    background-color: rgb(250, 209, 72);
+    transform: rotate(3.6deg);
   }
-#porcion2 {
-    transform: rotate(76deg);
+#segment2 {
+    transform: rotate(3.7deg);
   }
-#porcion2 .quesito {
-    background-color: #11A8AB;
-    transform: rotate(140deg);
+#segment2 .quesito {
+    background-color: rgb(247, 181, 82);
+    transform: rotate(14.4deg);
   }
-#porcion3 {
-    transform: rotate(215deg);
+#segment3 {
+    transform: rotate(14.5deg);
   }
-#porcion3 .quesito {
-    background-color: #4FC4F6;
-    transform: rotate(113deg);
+#segment3 .quesito {
+    background-color: rgb(245, 142, 78);
+    transform: rotate(68.4deg);
   }
-#porcionFin {
-    transform:rotate(-32deg);
+#segment4 {
+    transform:rotate(68.5deg);
   }
-#porcionFin .quesito {
-    background-color: #FCB150;
-    transform: rotate(32deg);
+#segment4 .quesito {
+    background-color: rgb(187, 103, 88);
+    transform: rotate(200deg);
   }
-.nota-final {
-  clear: both;
-  color: #4FC4F6;
-  font-size: 1rem;
-  padding: 2rem 0;
-}
-.nota-final strong {
-  color: #E64C65;
-}
-.nota-final a {
-  color: #FCB150;
-  font-size: inherit;
-}
 
+  .production-scnd-font-color {
+    color:rgb(187, 103, 88);
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+    .usage-scnd-font-color {
+    color:rgb(245, 142, 78);
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+    .transport-scnd-font-color {
+    color:rgb(247, 181, 82);
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+      .recycling-scnd-font-color {
+    color:rgb(250, 209, 72);
+    font-weight: bold;
+    font-size: 0.8em;
+  }
 </style>

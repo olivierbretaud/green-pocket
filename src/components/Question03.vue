@@ -46,7 +46,7 @@ export default {
   name: 'Question03',
   data() {
     return {
-      question03: "les aimants de nos smartphones sont constituées de néodyme. Combien de litres d'eau pollués sont rejetés pour la production d'une tonne de néodyme?",
+      question03: "Les aimants de nos smartphones sont constitués de néodyme. Combien de litres d'eau polluée sont rejetés pour la production d'une tonne de néodyme?",
       solution03: "La production de néodyme génère de grandes quantités de déchets, ce qui est d’autant plus dramatique que ces derniers sont particulièrement nocifs",
       awnserA03: '25 000 litres',
       awnserB03: '50 000 litres',

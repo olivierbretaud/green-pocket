@@ -1,38 +1,39 @@
 <template>
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
     <div class="awnser size-anim d-flex justify-content-center flex-column align-items-center" v-if="displayAwnser02">
-      <div class="row numbers">
-        <div class="col-3 col-lg-3 col-md-3 col-sm-3 year-2007">
-          <div class="progress progress-bar-vertical mr-0 mb-2" v-if="displayAwnser02">
-            <div class="progress-bar prog-2007" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">122
-            </div>
+      <div class="row">
+              <div class="col-3 year-2007">
+                <div class="progress progress-bar-vertical m-2" v-if="displayAwnser02">
+                  <div class="progress-bar prog-2007" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">122
+                  </div>
+                </div>
+                <span class="production-year"><p>2007</p></span>
+              </div>
+              <div class="col-3 year-2010">
+                <div class="progress progress-bar-vertical m-2" v-if="displayAwnser02">
+                <div class="progress-bar prog-2010" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">305
+                  <span class="sr-only">30% Complete</span>
+                </div>
+                </div>
+                  <span class="production-year"><p>2010</p></span>
+              </div>
+              <div class="col-3 year-2013">
+            <div class="progress progress-bar-vertical m-2">
+              <div class="progress-bar prog-2013" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">1019
+                <span class="sr-only">30% Complete</span>
+              </div>
           </div>
-          <span class="production-year"><p>2007</p></span>
-        </div>
-        <div class="col-3 col-lg-3 col-md-3 col-sm-3 year-2010">
-          <div class="progress progress-bar-vertical mr-0 mb-2" v-if="displayAwnser02">
-          <div class="progress-bar prog-2010" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">305
+                <span class="production-year"><p>2013</p></span>
+            </div>
+        <div class="col-3 year-2016">
+        <div class="progress progress-bar-vertical m-2" v-if="displayAwnser02">
+          <div class="progress-bar prog-2016" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">1470
             <span class="sr-only">30% Complete</span>
           </div>
-          </div>
-            <span class="production-year"><p>2010</p></span>
-        </div>
-        <div class="col-3 col-lg-3 col-md-3 col-sm-3 year-2013">
-      <div class="progress progress-bar-vertical mr-0 mb-2">
-        <div class="progress-bar prog-2013" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">1019
-          <span class="sr-only">30% Complete</span>
-        </div>
-    </div>
-          <span class="production-year"><p>2013</p></span>
       </div>
-   <div class="col-3 col-lg-3 col-md-3 col-sm-3 year-2016">
-   <div class="progress progress-bar-vertical mr-0 mb-2" v-if="displayAwnser02">
-    <div class="progress-bar prog-2016" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">1470
-      <span class="sr-only">30% Complete</span>
-    </div>
-</div>
-      <span class="production-year"><p>2016</p></span>
-   </div>
+            <span class="production-year"><p>2016</p></span>
+        </div>
+
 </div>
 <div class="row graph-ligne">
   <p>Production mondiale de téléphones portables exprimée en millions</p>
@@ -88,7 +89,7 @@ export default {
 
 .awnser {
   width: 96vw;
-  height: 60vh;
+  height: 40vh;
 }
 
 #bg-amin {
@@ -117,7 +118,7 @@ export default {
   }
   to {
     width: 96vw;
-    height: 60vh;
+    height: 40vh;
     opacity: 1;
   }
 }
@@ -131,7 +132,7 @@ export default {
   }
   to {
     width: 96vw;
-    height: 60vh;
+    height: 40vh;
     opacity: 1;
   }
 }
@@ -148,6 +149,7 @@ a {
   color: #42b983;
 }
 
+
 .progress-bar-vertical {
   width: 10vw;
   min-height: 100px;
@@ -161,47 +163,54 @@ a {
   width: 100%;
   height: 30% !important;
   background-color:rgb(244, 213, 93);
-  color: black;
+  color:#343a40;
+  font-weight: bold;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  animation: mymove 8s infinite;
+  animation-delay: -6s;
 }
 
-
+@keyframes mymove {
+  0% {opacity: 0.3;}
+  50% {opacity: 1;}
+  100% {opacity: 0.3;}
+}
 
 .prog-2010 {
   width: 100%;
   height: 50% !important;
-  -webkit-transition: height 0.6s ease;
-  -o-transition: height 0.6s ease;
-  transition: height 0.6s ease;
   background-color:rgb(247, 177, 57);
-  color: black;
+  color:#343a40;
+  font-weight: bold;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  animation: mymove 8s infinite;
+  animation-delay: -5s;
 }
 
 .prog-2013 {
   width: 100%;
   height: 70% !important;
-  -webkit-transition: height 0.6s ease;
-  -o-transition: height 0.6s ease;
-  transition: height 0.6s ease;
   background-color:rgb(247, 154, 73);
-  color: black;
+  color:#343a40;
+  font-weight: bold;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  animation: mymove 8s infinite;
+  animation-delay: -4s;
 }
 
 .prog-2016 {
   width: 100%;
   height: 100% !important;
   background-color:rgb(247, 99, 73);
-  color: black;
+  color:#343a40;
+  font-weight: bold;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-  transition: width 2s;
-  transition-delay: 1s;
+  animation: mymove 8s infinite;
+  animation-delay: -3s;
 }
 
 .year-2007 {
@@ -240,15 +249,5 @@ a {
   margin:10px;
 }
 
-@keyframes prog-2016 {
-  from {
-    height: 0%;
-    opacity: 1;
-  }
-  to {
-    height: 100%;
-    opacity: 1;
-  }
-}
 
 </style>

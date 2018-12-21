@@ -38,8 +38,8 @@ export default {
   name: 'Question05',
   data() {
     return {
-      question05: "Acheter un smartphone neuf produit autant de CO2, que recharger et utiliser un smartphone pendant ... !",
-      solution05: "Avant 10 ans, l'émission de CO2 liée à sa production est plus importante que celle généré par la recharge et l'utilisation quotidienne.",
+      question05: "Acheter un smartphone neuf produit autant de CO2 que recharger et utiliser un smartphone pendant ... !",
+      solution05: "Avant 10 ans, l'émission de CO2 liée à sa production est plus importante que celle générées par la recharge et l'utilisation quotidienne.",
       awnserA05: '5 ans',
       awnserB05: '7 ans',
       awnserC05: '10 ans',
