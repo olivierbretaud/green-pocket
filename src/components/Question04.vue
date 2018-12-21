@@ -51,7 +51,7 @@
         <h5 class="font-weight-bold text-dark" v-if="displayAwnser04">{{ awnser04 }}</h5>  
         <h5 class="m-3" v-if="!displayAwnser04" >{{ question04 }}</h5>
         <h5 class="m-3" v-if="displayAwnser04" >{{ solution04 }}</h5>
-        <div>
+      <div>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none' : displayAwnser04}" v-on:click="displayAwnser04 = true" @click="badAwnser04 = true"> {{ awnserA04 }} </button>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser04}" v-on:click="displayAwnser04 = true" @click="badAwnser04 = true"> {{ awnserB04 }} </button>
         <button type="button" class="custom-button btn btn-light m-2" v-bind:class="{ 'd-none': displayAwnser04}" v-on:click="displayAwnser04 = true" @click="goodAwnser04 = true"> {{ awnserC04 }} </button>
@@ -79,8 +79,6 @@ export default {
     }
   }
 }
-
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -246,8 +244,4 @@ p.center-date {
     font-weight: bold;
     font-size: 0.8em;
   }
-
-  
-
-
 </style>
