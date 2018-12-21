@@ -89,7 +89,7 @@ export default {
 
 .awnser {
   width: 96vw;
-  height: 60vh;
+  height: 40vh;
 }
 
 #bg-amin {

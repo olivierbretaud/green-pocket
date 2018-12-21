@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       endSentence: "Nos téléphones ont un impact considérable sur l'environement!",
-      mainSentence: "Faites un geste pour la planète, conserver votre téléphone !"
+      mainSentence: "Faites un geste pour la planète. Conservez votre téléphone !"
     }
   }
 }
