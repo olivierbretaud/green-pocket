@@ -2,7 +2,7 @@
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
     <div class="awnser size-anim" v-if="displayAwnser01">
       <svg id="bg-anim" width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <rect id="a" x="-50" y="70" width="200%" height="0.5" rx="0.5" ry="0.5" viewBox="0 0 100 100" fill="#343a40" >
+        <rect id="a" x="-50" y="70" width="200%" height="0.5" rx="0.5" ry="0.5" fill="#343a40" >
         </rect>
         <image x="30" y="5" height="40%" width="40%"  xlink:href="../assets/industry.svg" >
           <animateMotion

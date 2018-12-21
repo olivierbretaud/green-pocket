@@ -5,11 +5,13 @@
     <Question02 id="02"/>
     <Question03 id="03"/>
     <Question04 id="04"/>
+    <Question05 id="05"/>
     <End id="06"/>
   </div>
 </template>
 
 <script>
+import Question05 from './components/Question05.vue'
 import Question04 from './components/Question04.vue'
 import Question03 from './components/Question03.vue'
 import Question02 from './components/Question02.vue'
@@ -20,8 +22,9 @@ import Start from './components/Start.vue'
 export default {
   name: 'app',
   components: {
-    Question03,
+    Question05,
     Question04,
+    Question03,
     Question02,
     Question01,
     Start,
