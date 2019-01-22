@@ -68,8 +68,20 @@ border-width: medium !important;
 }
 
 .arrows {
-  width: 5vh !important;
+  width: 30px !important;
   opacity: 0.7;
+}
+
+@media screen and (max-width: 440px) {
+   h5 {
+    font-size: 1.1em !important;
+  }
+}
+
+@media screen and (max-width: 374px) {
+   h5 {
+    font-size: 1em !important;
+  }
 }
 
 </style>
