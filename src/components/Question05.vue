@@ -63,7 +63,7 @@ export default {
 
 .question {
   max-width: 600px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .awnser {
@@ -120,10 +120,12 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
 }
+
 a {
   color: #42b983;
 }

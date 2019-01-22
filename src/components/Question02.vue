@@ -77,6 +77,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .container-fluid {
   min-height: 100vh;
   padding: 0;
@@ -84,7 +85,7 @@ export default {
 
 .question {
   max-width: 600px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .awnser {
@@ -141,10 +142,12 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
 }
+
 a {
   color: #42b983;
 }
@@ -159,7 +162,7 @@ a {
   background-color:#16b164;
 }
 
- .prog-2007 {
+.prog-2007 {
   width: 100%;
   height: 30% !important;
   background-color:rgb(244, 213, 93);
@@ -248,6 +251,5 @@ a {
   max-width: 550px;
   margin:10px;
 }
-
 
 </style>

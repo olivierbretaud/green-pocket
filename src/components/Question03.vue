@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
     <div class="awnser size-anim" v-if="displayAwnser03">
-      <svg id="bg-anim" width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <svg id="bg-anim" width="90%" height="90%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <ellipse cx="50" cy="80" rx="50" ry="10" stroke="wihte" stroke-width="1" fill="#a4c9d6" />
           <image x="50" y="20" height="25%" width="25%"  xlink:href="../assets/skull-crossbones.svg" >
             <animateMotion
@@ -62,6 +62,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .container-fluid {
   min-height: 100vh;
   padding: 0;
@@ -69,7 +70,7 @@ export default {
 
 .question {
   max-width: 600px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .awnser {
@@ -126,10 +127,12 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
 }
+
 a {
   color: #42b983;
 }

@@ -52,8 +52,8 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .container-fluid {
   min-height: 100vh;
   padding: 0;
@@ -61,12 +61,12 @@ export default {
 
 .question {
   max-width: 600px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .awnser {
   width: 96vw;
-  height: 50vh;
+  height: 40vh;
 }
 
 #bg-amin {
@@ -95,7 +95,7 @@ export default {
   }
   to {
     width: 96vw;
-    height: 50vh;
+    height: 40vh;
     opacity: 1;
   }
 }
@@ -109,7 +109,7 @@ export default {
   }
   to {
     width: 96vw;
-    height: 50vh;
+    height: 40vh;
     opacity: 1;
   }
 }
@@ -118,10 +118,12 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
 }
+
 a {
   color: #42b983;
 }
